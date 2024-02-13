@@ -1,0 +1,28 @@
+Qno1-
+db.users.aggregate([
+  {
+    $project: {
+      topic: 1,
+      task: 1,
+      _id: 1
+    }
+  }
+])
+Qno2-
+db.collection.aggregate([
+  {
+    $match: {
+      drive_date: {
+        "$gt": "2021-10-15"
+      }
+    }
+  }
+])
+Qno3-
+db.collection.aggregate([
+  {
+    $project: {
+      _id: 1
+    }
+  }
+])
